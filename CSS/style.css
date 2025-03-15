@@ -90,9 +90,42 @@ h1 {
   background-color: #3d3d3d;
   color: white;
   border-radius: 10px;
+  margin: 30px auto;
+  text-align: center;
 }
+
+.divdeuxbloc {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divdeuxbloc img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.texte1 {
+  margin: 30px;
+  text-align: center;
+  align-items: center;
+  line-height: 30px;
+  font-size: 20px;
+}
+
 .troisiemebloc {
   display: flex;
+}
+
+.imgemetteur,
+.imgrecepteur {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 footer {
