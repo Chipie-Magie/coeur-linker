@@ -1,16 +1,20 @@
 body {
-  font-family: "roboto flex";
+  font-family: "poppins";
   margin-left: 80px;
   margin-right: 80px;
+  background-color: #e61123;
 }
 
 .headerindex {
-  margin-top: 30px;
-  display: flex;
+  margin-top: 0px;
 }
 
 .logo {
   height: 200px;
+  width: 700px;
+  object-fit: contain;
+  display: flex;
+  margin: 0 auto;
 }
 
 .menu {
@@ -24,11 +28,15 @@ body {
   font-size: 20px;
   flex: 1;
   justify-content: space-around;
+  margin: 30px;
 }
 
 .menu a {
   text-decoration: none;
-  color: #3d3d3d;
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+  font-family: "pacifico";
 }
 
 .menu a:hover {
@@ -48,6 +56,7 @@ p {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border: white 1px solid;
 }
 
 .titres {
@@ -59,8 +68,7 @@ p {
 }
 
 .premiertitre {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 40px;
   color: white;
   line-height: 100px;
 }
@@ -72,26 +80,25 @@ p {
   font-style: italic;
 }
 
-.deuxiemebloc {
-  margin-top: 30px;
-}
-
 h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #3d3d3d;
+  font-size: 50px;
+  color: white;
   line-height: 50px;
+  padding: 30px;
+  text-align: center;
+  font-family: "pacifico";
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 h1 {
   font-size: 20px;
-  font-weight: bold;
   padding: 20px;
-  background-color: #3d3d3d;
   color: white;
   border-radius: 10px;
   margin: 30px auto;
   text-align: center;
+  line-height: 40px;
 }
 
 .divdeuxbloc {
@@ -100,10 +107,18 @@ h1 {
 }
 
 .divdeuxbloc img {
-  width: 50%;
+  width: 30%;
   height: auto;
   object-fit: cover;
   border-radius: 30px;
+  border: white 1px solid;
+}
+
+.divdeuxdeux {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
 }
 
 .texte1 {
@@ -114,8 +129,23 @@ h1 {
   font-size: 20px;
 }
 
+.liste {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.imgliste {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
 .troisiemebloc {
   display: flex;
+  align-items: center;
 }
 
 .imgemetteur,
@@ -129,11 +159,12 @@ h1 {
 }
 
 footer {
-  background-color: #3d3d3d;
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  border-radius: 10px;
 }
 
 .piedmenu a {
