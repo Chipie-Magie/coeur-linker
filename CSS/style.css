@@ -68,9 +68,9 @@ p {
 }
 
 .premiertitre {
-  font-size: 40px;
+  font-size: 35px;
   color: white;
-  line-height: 100px;
+  line-height: 80px;
 }
 
 .deuxiemetitre {
@@ -158,7 +158,50 @@ h1 {
   margin-bottom: 30px;
 }
 
-.contactmain {
+.presentationdiv1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.imgportrait {
+  width: 200px;
+  height: auto;
+  border: white 2px solid;
+  border-radius: 50%;
+}
+
+.presentationtext1 {
+  text-align: center;
+  margin: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.presentationtext2 {
+  margin: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.lienrejoins {
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: max-content;
+}
+
+.contactmain,
+.presentationmain,
+.soutenirmain {
   border: white 3px solid;
   border-radius: 20px;
 }
