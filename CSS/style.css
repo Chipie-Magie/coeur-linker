@@ -158,23 +158,12 @@ h1 {
   margin-bottom: 30px;
 }
 
-footer {
-  background-color: #000000;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  border-radius: 10px;
+.contactmain {
+  border: white 3px solid;
+  border-radius: 20px;
 }
-
-.piedmenu a {
-  text-decoration: none;
-  color: white;
-  margin-right: 30px;
-}
-
-.piedmenu a:hover {
-  color: lightgray;
+.textecontact {
+  text-align: center;
 }
 
 form div {
@@ -192,10 +181,40 @@ form div > label {
 
 form div > input,
 form div > textarea {
-  background-color: rgb(179, 179, 179);
+  background-color: rgb(255, 240, 240);
   width: 50%;
   height: 30px;
   border-radius: 10px;
   border: 2px solid #202020;
   padding: 5px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.piedmenu a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+
+.piedmenu a:hover {
+  color: lightgray;
 }
