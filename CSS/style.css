@@ -47,6 +47,10 @@ p {
   line-height: 25px;
 }
 
+b {
+  font-weight: bold;
+}
+
 .premierbloc {
   position: relative;
 }
@@ -106,19 +110,19 @@ h1 {
   justify-content: space-around;
 }
 
-.divdeuxbloc img {
+.imgillustration {
   width: 30%;
   height: auto;
   object-fit: cover;
   border-radius: 30px;
-  border: white 1px solid;
+  border: white 2px solid;
 }
 
 .divdeuxdeux {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 60%;
+  width: 50%;
 }
 
 .texte1 {
