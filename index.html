@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Coeur Linker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,8 +19,9 @@
     <link rel="icon" href="./img/favicon.png" type="image/png" />
   </head>
   <body>
-    <header class="headerindex">
-      <img class="logo" src="./img/logotesttrois.jpg" />
+    <header>
+      <img class="logo" src="./img/logo.jpg" />
+      <button class="menu-toggle">≡ Menu</button>
       <nav class="menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
@@ -29,6 +31,16 @@
         </ul>
       </nav>
     </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+
+        toggleButton.addEventListener("click", function () {
+          menu.classList.toggle("active"); // Ajoute ou retire la classe 'active'
+        });
+      });
+    </script>
     <main class="indexmain">
       <div class="premierbloc">
         <img class="imgprincipal" src="./img/imgindex.png" />
@@ -67,7 +79,7 @@
       </h1>
       <div>
         <div class="liste">
-          <img class="imgliste" src="./img/imgbattement.JPG" />
+          <img class="imgliste" src="./img/imgemetteur.JPG" />
           <p>
             <b>1. L'émetteur :</b> la bague Coeur Linker mesure en temps réel
             les battements cardiaques de son porteur et transmet ces données à
@@ -75,17 +87,19 @@
           </p>
         </div>
         <div class="liste">
-          <img class="imgliste" src="./img/imgcoeur.JPG" />
+          <img class="imgliste" src="./img/imgrecepteur.JPG" />
           <p>
-            Un dispositif récepteur reproduit les battements cardiaques en temps
-            réel
+            <b>2. Le récepteur :</b> la peluche Coeur Linker reçoit les données
+            transmises par l'application et reproduit fidèlement ces pulsations
+            en temps réel grâce à son mécanisme interne innovant.
           </p>
         </div>
         <div class="liste">
-          <img class="imgliste" src="./img/imgsmartphone.JPG" />
+          <img class="imgliste" src="./img/imgapp.JPG" />
           <p>
-            Une application mobile intuitive récupère les données de battements
-            cardiaques en temps réel
+            <b>L'application mobile</b> intuitive fait le lien entre la bague et
+            la peluche Coeur Linker, permettant de synchroniser les deux
+            produits et de les personnaliser selon vos préférences.
           </p>
         </div>
       </div>
@@ -93,26 +107,27 @@
       <div class="troisiemebloc">
         <img class="imgemetteur" src="./img/bague.JPG" />
         <p>
-          <span style="font-weight: bold">La bague Coeur Linker</span> Conçue
-          pour être confortable et légère, cette bague est fabriquée avec des
-          matériaux haut de gamme, offrant à la fois durabilité et esthétisme.
-          Elle permet à votre moitié de ressentir vos battements vos battements
-          où qu'elle soit, créant ainsi un lien émotions puissant à traverser la
-          distance. Que vous soyez séparés par quelques kilomètres ou des
-          milliers, la bague CoeurLinker vous permet de faire battre votre amour
-          au même rythme.
+          <b>La bague Coeur Linker</b> Conçue pour être confortable et légère,
+          cette bague est fabriquée avec des matériaux haut de gamme, offrant à
+          la fois durabilité et esthétisme. Elle permet à votre moitié de
+          ressentir vos battements vos battements où qu'elle soit, créant ainsi
+          un lien émotions puissant à traverser la distance. Que vous soyez
+          séparés par quelques kilomètres ou des milliers, la bague CoeurLinker
+          vous permet de faire battre votre amour au même rythme.
         </p>
       </div>
       <div class="troisiemebloc">
         <img class="imgrecepteur" src="./img/peluche.JPG" />
         <p>
-          <span style="font-weight: bold">La peluche Coeur Linker</span> Grâce à
-          une technologie Bluetooth innovante, la peluche est connectée à un
-          émetteur porté par votre moitié. Chaque battement de son cœur est
-          fidèlement retransmis à la peluche, qui active un mécanisme interne
-          simulant ces pulsations.
+          <b>La peluche Coeur Linker</b> Grâce à une technologie Bluetooth
+          innovante, la peluche est connectée à un émetteur porté par votre
+          moitié. Chaque battement de son cœur est fidèlement retransmis à la
+          peluche, qui active un mécanisme interne simulant ces pulsations.
         </p>
       </div>
+      <a class="boutonsoutenir" href="soutenir.html"
+        >je précommande mon pack Coeur Linker</a
+      >
     </main>
     <footer>
       <p>© 2025 CœurLinker. Tous droits réservés.</p>
