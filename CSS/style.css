@@ -289,11 +289,11 @@ button {
   font-size: 20px;
 }
 
-/* Optimisation pour les écrans de moins de 768px */
+/* Optimisation pour les écrans de moins de 430px */
 @media (max-width: 430px) {
   body {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -310,21 +310,23 @@ button {
     top: 100%;
     left: 0;
     width: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     height: auto;
   }
 
   .menu-toggle {
     display: block;
-    background: black;
-    color: white;
-    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
     font-size: 20px;
+    font-family: pacifico;
     padding: 10px 20px;
     cursor: pointer;
     position: relative;
     z-index: 10;
+    margin: 0 10px;
+    border: none;
   }
 
   .menu.active {
@@ -339,9 +341,19 @@ button {
 
   .premiertitre,
   .deuxiemetitre {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
+  }
+
+  .imgprincipal {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 20px;
   }
 
   .divdeuxbloc {
@@ -351,7 +363,6 @@ button {
 
   .imgillustration {
     width: 80%;
-    margin-bottom: 20px;
   }
 
   .texte1 {
