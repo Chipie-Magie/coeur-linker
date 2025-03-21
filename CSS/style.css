@@ -290,7 +290,7 @@ button {
 }
 
 /* Optimisation pour les écrans de moins de 768px */
-@media (max-width: 768px) {
+@media (max-width: 430px) {
   body {
     width: 100%;
     margin: 0;
