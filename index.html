@@ -21,7 +21,6 @@
   <body>
     <header>
       <img class="logo" src="./img/logo.jpg" />
-      <button class="menu-toggle">≡ Menu</button>
       <nav class="menu">
         <ul>
           <li><a href="index.html">Accueil</a></li>
@@ -31,16 +30,6 @@
         </ul>
       </nav>
     </header>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.querySelector(".menu-toggle");
-        const menu = document.querySelector(".menu");
-
-        toggleButton.addEventListener("click", function () {
-          menu.classList.toggle("active"); // Ajoute ou retire la classe 'active'
-        });
-      });
-    </script>
     <main class="indexmain">
       <div class="premierbloc">
         <img class="imgprincipal" src="./img/imgindex.png" />
@@ -105,29 +94,42 @@
       </div>
       <h2>Nos produits</h2>
       <div class="troisiemebloc">
-        <img class="imgemetteur" src="./img/bague.JPG" />
-        <p>
-          <b>La bague Coeur Linker</b> Conçue pour être confortable et légère,
-          cette bague est fabriquée avec des matériaux haut de gamme, offrant à
-          la fois durabilité et esthétisme. Elle permet à votre moitié de
-          ressentir vos battements vos battements où qu'elle soit, créant ainsi
-          un lien émotions puissant à traverser la distance. Que vous soyez
-          séparés par quelques kilomètres ou des milliers, la bague CoeurLinker
-          vous permet de faire battre votre amour au même rythme.
-        </p>
+        <div class="imgbloctrois">
+          <img class="imgemetteur" src="./img/bague3.JPG" />
+        </div>
+        <div class="titreproduit">
+          <h3>La bague Coeur Linker</h3>
+        </div>
+        <div class="texteproduit">
+          <p>
+            Conçue pour être <b>confortable et légère</b>, la bague Coeur Linker
+            est fabriquée avec des matériaux haut de gamme, offrant à la fois
+            durabilité et esthétisme.<br />
+            <br />Grâce à son <b>capteur de fréquence cardiaque intégré</b>,
+            votre proche pourra ressentir vos battements cardiaques où qu'elle
+            soit et en temps réel.
+          </p>
+        </div>
       </div>
       <div class="troisiemebloc">
-        <img class="imgrecepteur" src="./img/peluche.JPG" />
-        <p>
-          <b>La peluche Coeur Linker</b> Grâce à une technologie Bluetooth
-          innovante, la peluche est connectée à un émetteur porté par votre
-          moitié. Chaque battement de son cœur est fidèlement retransmis à la
-          peluche, active un mécanisme interne simulant ces pulsations.
-        </p>
+        <div class="imgbloctrois">
+          <img class="imgrecepteur" src="./img/peluchecoeur.JPG" />
+        </div>
+        <div class="titreproduit">
+          <h3>La peluche Coeur Linker</h3>
+        </div>
+        <div class="texteproduit">
+          <p>
+            La peluche Coeur Linker se caractérise par sa
+            <b>texture ultra-douce</b> et <b>réconfortante</b>, parfaite pour
+            s'y blottir.<br />
+            <br />Grâce à une <b>technologie innovante</b>, elle reproduit
+            fidèlement chaque battement du coeur de votre proche en temps réel
+            en activant un mécanisme interne simulant ces pulsations.
+          </p>
+        </div>
       </div>
-      <a class="boutonsoutenir" href="soutenir.html"
-        >je précommande mon pack Coeur Linker</a
-      >
+      <a class="boutonsoutenir" href="soutenir.html">En savoir plus</a>
     </main>
     <footer>
       <p>© 2025 CœurLinker. Tous droits réservés.</p>

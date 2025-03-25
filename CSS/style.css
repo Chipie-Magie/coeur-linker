@@ -42,7 +42,9 @@ header {
 }
 
 p {
-  line-height: 25px;
+  line-height: 20px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 b {
@@ -97,7 +99,6 @@ h1 {
   font-size: 20px;
   padding: 20px;
   color: white;
-  border-radius: 10px;
   margin: 30px auto;
   text-align: center;
   line-height: 40px;
@@ -120,7 +121,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 60%;
+  width: 80%;
 }
 
 .texte1 {
@@ -139,12 +140,12 @@ h1 {
   display: flex;
   align-items: center;
   margin: 30px;
-  width: 60%;
+  width: 80%;
   margin-left: 10%;
 }
 
 .imgliste {
-  width: 100px;
+  width: 200px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -153,20 +154,30 @@ h1 {
 }
 
 .troisiemebloc {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 30% 1fr;
+  padding: 20px;
+}
+
+.imgbloctrois {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: fit-content;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .imgemetteur,
 .imgrecepteur {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
+  width: 300px;
   border-radius: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  border: white 2px solid;
 }
 
 .presentationdiv1 {
@@ -212,15 +223,16 @@ h1 {
 
 .boutonsoutenir {
   border-radius: 20px;
-  background-color: black;
-  color: white;
-  padding: 20px;
+  background-color: white;
+  color: black;
+  padding: 30px;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 80px auto;
   width: max-content;
+  font-weight: bold;
 }
 
 .contactmain,
@@ -261,8 +273,9 @@ footer {
   color: white;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
+  margin-top: 100px;
 }
 
 .piedmenu a {
@@ -273,10 +286,6 @@ footer {
 
 .piedmenu a:hover {
   color: lightgray;
-}
-
-.menu-toggle {
-  display: none;
 }
 
 button {
@@ -293,125 +302,176 @@ button {
 @media (max-width: 430px) {
   body {
     width: 100%;
-    margin: 0 auto;
     padding: 0;
+    border: green 2px solid;
   }
 
   .logo {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: black;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: auto;
-    z-index: 1000;
-    height: auto;
-  }
-
-  .menu-toggle {
-    display: block;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    font-size: 20px;
-    font-family: pacifico;
-    padding: 10px 20px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-    margin: 0 10px;
-    border: none;
-  }
-
-  .menu.active {
-    display: flex;
+    width: 90%;
+    padding: 0;
   }
 
   .menu ul {
-    flex-direction: column;
-    line-height: 30px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu a {
+    display: flex;
     font-size: 16px;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
   }
 
   .premiertitre,
   .deuxiemetitre {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     text-align: center;
   }
 
   .imgprincipal {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
+    align-items: center;
+    display: flex;
   }
 
   h2 {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 25px;
+    line-height: 20px;
+    padding: 20px;
+    margin: 0;
   }
 
-  .divdeuxbloc {
-    flex-direction: column;
-    align-items: center;
+  h1,
+  .texte1 {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  .divdeuxdeux {
+    width: 100%;
   }
 
   .imgillustration {
-    width: 80%;
+    width: 30%;
+    height: 70%;
+    margin-right: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 1em 0;
   }
 
-  .texte1 {
-    font-size: 18px;
-    margin: 20px;
+  .textfonctionnement {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .liste {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .liste p {
+    padding: 10px;
+  }
+
+  .imgliste {
+    margin: 10px;
+    width: 25%;
   }
 
   .troisiemebloc {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: 150px auto;
+    padding: 10px;
+  }
+
+  .imgbloctrois {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: max-content;
+  }
+
+  .titreproduit {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 10 auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .texteproduit {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .texteproduit p {
+    font-size: 24;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .imgemetteur,
   .imgrecepteur {
     width: 150px;
-    margin: 10px 0;
-  }
-
-  .presentationdiv1 {
-    flex-direction: column;
-    align-items: center;
   }
 
   .imgportrait {
-    width: 150px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  .presentationtext1,
-  .presentationtext2 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .lienrejoins,
   .boutonsoutenir {
-    width: 80%;
-    padding: 15px;
-    font-size: 18px;
+    width: 40%;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 
   footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    width: 100%;
+    padding: 0;
+    line-height: 20px;
   }
 
-  .piedmenu a {
-    margin: 10px 0;
+  footer p {
+    margin: 10px;
   }
+
+  .piedmenu {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #global {
+    width: 100%;
+    padding: 0px;
+  }
+
+  #contenu {
+    width: 100%;
+  }
+  #menu {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1388px) {
 }
