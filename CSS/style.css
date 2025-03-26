@@ -182,18 +182,19 @@ h3 {
 .presentationdiv1 {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 30px;
 }
 
 .imgportrait {
-  width: 200px;
+  width: 300px;
   height: auto;
   border: white 2px solid;
   border-radius: 50%;
 }
 
 .presentationtext1 {
-  text-align: center;
+  text-align: justify;
   margin: 30px;
   line-height: 30px;
   font-size: 20px;
@@ -205,6 +206,37 @@ h3 {
   line-height: 30px;
   font-size: 20px;
   align-items: center;
+}
+
+.divprécommande {
+  display: flex;
+}
+
+.divprécommande h1 {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.imgprécommande {
+  border-radius: 10%;
+  border: white 2px solid;
+  margin: 30px;
+}
+
+.texteprécommande {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.prixbarré {
+  text-decoration: line-through;
+  margin-left: 30px;
+}
+
+.prix {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 30px;
 }
 
 .lienrejoins {
@@ -236,7 +268,8 @@ h3 {
 
 .contactmain,
 .presentationmain,
-.soutenirmain {
+.soutenirmain,
+.commandemain {
   border: white 3px solid;
   border-radius: 20px;
 }
