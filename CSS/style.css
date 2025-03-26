@@ -18,22 +18,22 @@ header {
 .menu {
   display: flex;
   align-items: center;
-  flex: 1;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .menu ul {
   display: flex;
-  font-size: 20px;
-  flex: 1;
+  width: 100%;
   justify-content: space-around;
-  margin: 30px;
+  padding: 20px;
 }
 
 .menu a {
   text-decoration: none;
   color: white;
-  font-size: 30px;
-  margin: 20px;
+  font-size: 2rem;
+  margin: 0 20px;
   font-family: "pacifico";
 }
 
@@ -42,9 +42,8 @@ header {
 }
 
 p {
+  font-size: 1.2rem;
   line-height: 20px;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 b {
@@ -67,25 +66,25 @@ b {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 20px;
-  width: 50%;
+  padding: 10px;
+  width: 60%;
 }
 
 .premiertitre {
-  font-size: 35px;
+  font-size: 2.5rem;
   color: white;
-  line-height: 80px;
+  line-height: max(6vh, 60px);
 }
 
 .deuxiemetitre {
-  font-size: 20px;
+  font-size: 1.4rem;
   color: white;
-  line-height: 80px;
+  line-height: max(6vh, 60px);
   font-style: italic;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 2.5rem;
   color: white;
   line-height: 50px;
   padding: 30px;
@@ -96,7 +95,7 @@ h2 {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1.4rem;
   padding: 20px;
   color: white;
   margin: 30px auto;
@@ -299,11 +298,10 @@ button {
 }
 
 /* Optimisation pour les écrans de moins de 430px */
-@media (max-width: 430px) {
+@media (max-width: 767px) {
   body {
     width: 100%;
     padding: 0;
-    border: green 2px solid;
   }
 
   .logo {
@@ -342,8 +340,8 @@ button {
 
   h2 {
     font-size: 25px;
-    line-height: 20px;
-    padding: 20px;
+    line-height: 30px;
+    padding: 40px;
     margin: 0;
   }
 
@@ -384,6 +382,8 @@ button {
 
   .liste p {
     padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .imgliste {
@@ -413,6 +413,7 @@ button {
     text-align: center;
     justify-content: center;
     padding-top: 20px;
+    padding-left: 10px;
   }
 
   .texteproduit {
@@ -421,9 +422,10 @@ button {
   }
 
   .texteproduit p {
-    font-size: 24;
-    padding-top: 20px;
+    font-size: 16px;
+    padding-top: 60px;
     padding-bottom: 20px;
+    line-height: 20px;
   }
 
   .imgemetteur,
@@ -452,6 +454,7 @@ button {
 
   footer p {
     margin: 10px;
+    font-size: 1rem;
   }
 
   .piedmenu {
@@ -459,19 +462,56 @@ button {
   }
 }
 
-@media (max-width: 767px) {
-  #global {
-    width: 100%;
-    padding: 0px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 95%;
+    padding: 0;
+    border: white 2px solid;
   }
 
-  #contenu {
-    width: 100%;
+  p {
+    line-height: 25px;
+    padding-top: 0;
+    margin-top: 0;
   }
-  #menu {
-    width: 100%;
-  }
-}
 
-@media (min-width: 768px) and (max-width: 1388px) {
+  .premiertitre,
+  .deuxiemetitre {
+    font-size: 1.5rem;
+  }
+
+  .menu a {
+    font-size: 1.8rem;
+  }
+
+  .troisiemebloc {
+    grid-template-columns: 300px 1fr;
+    margin: 0 auto;
+    padding: 30px;
+    grid-template-rows: 10% 1fr;
+  }
+
+  h3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .titreproduit {
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-bottom: 0;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .texteproduit {
+    padding: 20px;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .imgemetteur,
+  .imgrecepteur {
+    width: 300px;
+  }
 }
