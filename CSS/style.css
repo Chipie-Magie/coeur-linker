@@ -241,10 +241,11 @@ h3 {
 
 .lienrejoins {
   border-radius: 20px;
-  background-color: black;
-  color: white;
-  padding: 20px;
+  background-color: white;
+  color: black;
+  padding: 30px;
   text-decoration: none;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,6 +274,7 @@ h3 {
   border: white 3px solid;
   border-radius: 20px;
 }
+
 .textecontact {
   text-align: center;
 }
@@ -328,6 +330,7 @@ button {
   margin-top: 20px;
   margin-bottom: 60px;
   font-size: 20px;
+  border: none;
 }
 
 /* Optimisation pour les écrans de moins de 430px */
@@ -349,7 +352,7 @@ button {
 
   .menu a {
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     justify-content: space-around;
     width: 100%;
     padding-top: 20px;
@@ -457,7 +460,6 @@ button {
   .texteproduit p {
     font-size: 16px;
     padding-top: 60px;
-    padding-bottom: 20px;
     line-height: 20px;
   }
 
@@ -466,17 +468,102 @@ button {
     width: 150px;
   }
 
+  .liensbasdepageindex {
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .liensbasdepageindex a {
+    margin: 20px auto;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .presentationmain {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .presentationdiv1 {
+    display: block;
+  }
+
   .imgportrait {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .presentationtext1 {
+    font-size: 18px;
+    text-align: start;
+    margin-right: 5px;
+    margin-left: 10px;
+    line-height: 30px;
+  }
+
+  .presentationtext2 {
+    text-align: start;
+    font-size: 18px;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .presentationmain h1 {
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 5px;
   }
 
   .boutonsoutenir {
-    width: 40%;
-    text-align: center;
-    line-height: 20px;
+    padding: 20px 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .soutenirmain {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .divprécommande {
+    display: block;
+  }
+
+  .imgprécommande {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
     margin: 0 auto;
-    margin-top: 20px;
+    display: flex;
+  }
+
+  .div2précommande h1 {
+    margin: 20px;
+    font-size: 24px;
+  }
+
+  .texteprécommande {
+    font-size: 16px;
+  }
+
+  .soutenirmain h1 {
+    font-size: 20px;
+    line-height: 30px;
   }
 
   footer {
@@ -494,10 +581,9 @@ button {
     margin: 10px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
-    width: 95%;
+    width: 100%;
     padding: 0;
   }
 
