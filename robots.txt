@@ -1,2 +1,3 @@
-User-agent: Googlebot
-Allow: /favicon.png
+User-agent: *
+Allow: /
+Sitemap: https://chipie-magie.github.io/coeur-linker/sitemap.txt
